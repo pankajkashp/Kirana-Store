@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CategorySection from "./components/CategorySection";
 import ProductGrid from "./components/ProductGrid";
-import { DeliveryArea, HowItWorks, StoreInfo, StoreInfoStrip } from "./components/HomeSections";
+import { DeliveryArea, HowItWorks, StoreInfo } from "./components/HomeSections";
 import Footer from "./components/Footer";
 import { CartDrawer, CheckoutModal, ProductDetailModal, OrderSuccessModal } from "./components/Modals";
 
@@ -125,10 +125,7 @@ const App: React.FC = () => {
       
       <main className="flex-grow bg-white">
         {!isSearching && (
-          <>
-            <Hero />
-            <StoreInfoStrip />
-          </>
+          <Hero />
         )}
         
         <CategorySection 

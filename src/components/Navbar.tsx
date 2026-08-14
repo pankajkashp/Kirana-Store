@@ -1,5 +1,5 @@
 import React from "react";
-import { Search, ShoppingCart } from "lucide-react";
+import { Search, ShoppingCart, Store } from "lucide-react";
 
 interface NavbarProps {
   cartCount: number;
@@ -15,15 +15,16 @@ const Navbar: React.FC<NavbarProps> = ({
   setSearchQuery,
 }) => {
   return (
-    <header className="bg-white sticky top-0 z-40 border-b border-gray-200 shadow-sm">
+    <header className="bg-[#FDF9F1] sticky top-0 z-40 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div 
-            className="flex items-center cursor-pointer" 
+            className="flex items-center space-x-2 cursor-pointer" 
             onClick={() => window.scrollTo(0, 0)}
           >
-            <span className="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">🛒 Raju Kirana</span>
+            <Store className="h-6 w-6 text-[#14532D]" />
+            <span className="text-xl md:text-2xl font-bold text-[#14532D] tracking-tight">Raju Kirana Store</span>
           </div>
 
           {/* Desktop Navigation */}
